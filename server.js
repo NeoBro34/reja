@@ -6,6 +6,7 @@ const app = express();
 const res = require("express/lib/response");
 const http = require("http");
 const fs = require("fs");
+const { text } = require("stream/consumers");
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -17,6 +18,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 });
  
 
+
 // 1-step. Kirish code.
 
 app.use(express.static("public"));    
@@ -24,25 +26,29 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 
-// 2-step. Session code.
+// 2-step. Session code. 
 
 
 // 3-step. Views code.
 app.set("views","views"); 
 app.set("view engine", "ejs");
 
+
 // 4-step. Routing code. Serverni yaratish.
-app.post("/create-item", function(req, res) {
-    
+app.post("/create-item", function(req, res) { 
+    console.log(req.body);
+    res.json({ text: "hammasi zo'r ishlayabdi"})
+});
+
+app.get("/", function(req, res) {
+    res.render("harid" );
 });
 
 app.get('/author', (req, res) => {
     res.render("author", {user: user});
 });
 
-app.get("/", function(req, res) {
-    res.render("harid" );
-});
+
 
 const server = http.createServer(app);
 let PORT = 3000;

@@ -1,1 +1,229 @@
-<div>HELLO WORLD</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1-1">
+                        <img src="images/profile.png" 
+                        width="156px"
+                        height="142px"
+                        alt="">
+                    </div>
+                    <div class="left_1-2"><%= user.name %></div>
+                    <div class="left_1-3"><%= user.profession %></div>
+                    <div class="left-icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/facebook.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/instagram.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/twitter.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/youtube.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/linkedin.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/dribbble.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="left_2-1">
+                        <div class="left_2-key">Age:</div>
+                        <div class="left_2-value"><%= user.age %></div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="left_2-key">Residence:</div>
+                        <div class="left_2-value"><%= user.residence %></div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="left_2-key">Freelance:</div>
+                        <div class="left_2-value" style="color: #7EB942;">Available</div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="left_2-key">Address</div>
+                        <div class="left_2-value"><%= user.adress %></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <h1 class="left_3-lang">Language</h1>
+                    <div class="left_3-uz">
+                        <div class="left_label">Uzbek</div>
+                        <div class="left_value">100%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="217" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_3-uz">
+                        <div class="left_label">Korean</div>
+                        <div class="left_value">70%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="165" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_3-uz">
+                        <div class="left_label">English</div>
+                        <div class="left_value">30%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="50" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_4">
+                    <h1 class="left_3-lang">Skills</h1>
+                    <div class="left_4-skill">
+                        <div class="left_label">Html</div>
+                        <div class="left_value">90%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="200" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_4-skill">
+                        <div class="left_label">CSS</div>
+                        <div class="left_value">85%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="190" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_4-skill">
+                        <div class="left_label">Js</div>
+                        <div class="left_value">80%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="180" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_4-skill">
+                        <div class="left_label">PHP</div>
+                        <div class="left_value">70%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="165" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                    <div class="left_4-skill">
+                        <div class="left_label">Figma</div>
+                        <div class="left_value">70%</div>
+                    </div>
+                    <div class="left_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+                            <rect x="2" y="2" width="165" height="2" rx="1" fill="#FFB400"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_5">
+                    <h1 class="left_3-lang">Extra Skills</h1>
+                    <div class="left_exItem">
+                        <img class="icon_exSkill" src="icon/extraSkills.png" alt="">Bootstrap, Materialize</div>
+                    <div class="left_exItem"><img class="icon_exSkill" src="icon/extraSkills.png" alt="">Stylus, Sass, Less</div>
+                    <div class="left_exItem"><img class="icon_exSkill" src="icon/extraSkills.png" alt="">Gulp, Webpack, Grunt</div>
+                    <div class="left_exItem"><img class="icon_exSkill" src="icon/extraSkills.png" alt="">GIT Knowledge</div>
+                </div>
+                <div class="marginer"></div>
+            </div>
+            <div class="midd_frame">
+                <div class="midd_top">
+                    <div class="midd_top-left">
+                        <h1><%= user.work_place %></h1>
+                        <p><%= user.about_me %> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti ab libero quidem repudiandae fuga similique nihil eligendi.</p>
+                        <button class="midd_top-button">HIRE ME <img src="icon/Vector.png" alt=""></button>
+                    </div>
+                    <div class="midd_top-right">
+                        <img src="images/middimg.png" width="326px" height="452.5px" alt="">
+                    </div>
+                </div>
+                <div class="midd_bottom">
+                    <div class="midd_bottom-top">
+                        <h1>My Services</h1>
+                        <p><%= user.service_desc %></p>
+                    </div>
+                    <div class="midd_bottom-bottom">
+                        <div class="midd_myservices">
+                            <img src="midd_icon/1.png" alt="">
+                            <div class="midd_bottom-label">Web Development</div>
+                            <div class="midd_bottom-value">Blog, E-Commerce</div>
+                        </div>
+                        <div class="midd_myservices">
+                             <img src="midd_icon/2.png" alt="">
+                            <div class="midd_bottom-label">UI/UX Design</div>
+                            <div class="midd_bottom-value">Mobile App, Website Design</div>
+                        </div>
+                        <div class="midd_myservices">
+                             <img src="midd_icon/3.png" alt="">
+                            <div class="midd_bottom-label">Sound Design</div>
+                            <div class="midd_bottom-value">Voice Over, Beat Making</div>
+                        </div>
+                        <div class="midd_myservices">
+                             <img src="midd_icon/4.png" alt="">
+                            <div class="midd_bottom-label">Game Design</div>
+                            <div class="midd_bottom-value">Character Design, Props & Objects</div>
+                        </div>
+                        <div class="midd_myservices">
+                             <img src="midd_icon/5.png" alt="">
+                            <div class="midd_bottom-label">Photography</div>
+                            <div class="midd_bottom-value">Portrait, Product Photography</div>
+                        </div>
+                        <div style="padding: 20px;" class="midd_myservices">
+                            <div class="midd_bottom-label">Advertising</div>
+                            <div class="midd_bottom-value">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. </div>
+                            <a href="#" class="midd_bottom-link">ORDER NOW ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_frame">3</div>
+        </div>
+    </div>
+</body>
+</html>
