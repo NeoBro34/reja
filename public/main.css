@@ -11,11 +11,10 @@
 .frame .main_frame {
     position: relative;
     width: 1440px;
-    height: 1312px;
+    height: 1315px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2px;
 }
 
 .main_frame .left_frame {
@@ -159,6 +158,9 @@
     border-radius: 50%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #FFB400;
+}
+.icon:hover {
+    background-color: #9a6c02;
 }
 
 .icon-1 {
@@ -308,10 +310,15 @@ text-transform: capitalize;
     border-radius: 5px;
     border: #FFB400;
     font-size: 16px;
+    cursor: pointer;
+}
+.midd_top-button:hover {
+    background-color: #9a6c02;
+    color: #ddd;
 }
 .midd_top-left>h1 {
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 45px;
 }
 .midd_top-left>p {
     color: var(--Paragraph-Font, #767676);
@@ -324,6 +331,76 @@ text-transform: capitalize;
     line-height: 24px;
     text-transform: capitalize;
     margin-left: 10px;
+}
+.midd_icon1 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 554.86px;
+    top: 379.96px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 180, 0, 0.8);
+    box-sizing: border-box;
+}
+.midd_icon2 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 63.66px;
+    top: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 180, 0, 0.8);
+    box-sizing: border-box;
+    transform: rotate(26.05deg);
+}
+.midd_icon3 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 898px;
+    top: 79px;
+    border: 2px solid rgba(255, 180, 0, 0.8);
+    box-sizing: border-box;
+}
+.midd_icon4 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 496px;
+    top: 46px;
+    border-radius: 50%;
+    border: 2px solid rgba(5, 255, 0, 0.8);
+    box-sizing: border-box;
+}
+.midd_icon5 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 105px;
+    top: 441px;
+    border-radius: 50%;
+    border: 2px solid rgba(5, 255, 0, 0.8);
+    box-sizing: border-box;
+}
+.midd_icon6 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 375.03px;
+    top: 331px;
+    border: 2px solid rgba(0, 71, 255, 0.8);
+    box-sizing: border-box;
+    transform: rotate(26.05deg);
+}
+.midd_icon7 {
+    position: absolute; 
+    width: 16px;
+    height: 16px;
+    left: 925px;
+    top: 427px;
+    border-radius: 100px 10px 15px 20px;
+    border: 2px solid rgba(255, 46, 0, 0.8);
+    box-sizing: border-box;
 }
 
 .midd_bottom {
@@ -392,7 +469,7 @@ text-transform: capitalize;
     margin-top: 15px;
 }
 .midd_bottom-value {
-     color: var(--Paragraph-Font, #767676);
+    color: var(--Paragraph-Font, #767676);
     font-kerning: none;
     font-feature-settings: 'calt' off;
     font-family: sans-serif;
@@ -407,4 +484,78 @@ text-transform: capitalize;
     color:  #FFB400;
     text-decoration: none;
     font-size: 12px;
+}
+
+/* Right section*/
+.right_frame {
+}
+.right_frame-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    min-height: 250px;
+    justify-content: space-between;
+}
+.right_frame-bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_frame-bottom {
+    margin-top: 15px;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right_frame-item>img {
+    width: 20px;
+    height: 20px;
+} 
+.right_frame-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.right_frame-button {
+    background-color: #2B2B2B;
+    color: white;
+    width: 60px;
+    border-radius: 2px;
+   
+}
+.right_frame-butt {
+    display: inline-block;
+    position: relative;  /* pseudo-elementni joylashtirish uchun */
+    background: #222;          /* quti rangi */
+    color: #fff;               /* matn rangi */
+    padding: 5px 12.7px;        /* quti ichki bo'shligi */
+    border-radius: 3px;       /* yumaloq burchaklar */
+    font-size: 12.5px;           /* misoldagi kattalik */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* pastdagi treugolnik: border-trick */
+.right_frame-butt::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;   /* uchburchak balandligi bilan moslashtir */
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid #222; /* uchburchak rangi quti rangi bilan bir xil bo'lsin */
+}
+.right_frame-item:hover {
+    background-color: #FFB400;
+    cursor: pointer;
 }
