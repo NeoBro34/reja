@@ -38,11 +38,9 @@ class Shop {
     sotish(mahsulot, miqdori) {
         if (mahsulot === "non") {
             return this.non -= miqdori;
-        }
-        if (mahsulot === "lag'mon") {
+        } else if (mahsulot === "lag'mon") {
             return this.lagman -= miqdori;
-        }
-        if (mahsulot === "cola") {
+        } else if (mahsulot === "cola") {
             return this.cola -= miqdori;
         } else {
             console.log("Iltimos mahsulot nomi yoki miqdorini to'g'ri kiriting!")
@@ -52,11 +50,9 @@ class Shop {
     qabul(mahsulot, miqdori) {
        if (mahsulot === "non") {
             return this.non += miqdori;
-        }
-        if (mahsulot === "lag'mon") {
+        } else if (mahsulot === "lag'mon") {
             return this.lagman += miqdori;
-        }
-        if (mahsulot === "cola") {
+        } else if (mahsulot === "cola") {
             return this.cola += miqdori;
         } else {
             console.log("Iltimos mahsulot nomi yoki miqdorini to'g'ri kiriting!")
