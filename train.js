@@ -1,4 +1,23 @@
 /*
+E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+function getReverse(a) {
+    if (typeof a === "string") {
+      let array = a.split("");
+      array.reverse();
+      let result = array.join("");
+      return result;
+    } else {
+      return "Iltimos matnni string ko'rinishida kiriting (ex: 'hello') !";
+    }
+}
+console.log(getReverse("hello"))
+
+/*
 TASK D
 
 Ikkita parametra ega function tuzing, va functioning
@@ -10,28 +29,28 @@ Yuqoridagi misolda birinchi va ikkinchi parametr qiymatli bir xil
 ya'ni bir xil harflar qatnashganligi uchun true qiymat qaytaradi.
 */
 
-function checkContent(a, b) {                  // ikki parametrli functon
-    if (a.length !== b.length) return false;   // agarda uzunligi teng bo'lmasa
+// function checkContent(a, b) {                  // ikki parametrli functon
+//     if (a.length !== b.length) return false;   // agarda uzunligi teng bo'lmasa
 
-    let array1 = a.split("");                  // har ikki parametrni arrayga aylantiramiz
-    let array2 = b.split("");
+//     let array1 = a.split("");                  // har ikki parametrni arrayga aylantiramiz
+//     let array2 = b.split("");
 
-    console.log(array1, array2);
+//     console.log(array1, array2);
 
-    array1.sort();                             // har ikki arrayning ichidagi elementlarni alifbo ko'rinishida tartiblaymiz
-    array2.sort();
+//     array1.sort();                             // har ikki arrayning ichidagi elementlarni alifbo ko'rinishida tartiblaymiz
+//     array2.sort();
 
-    console.log(array1, array2);
+//     console.log(array1, array2);
 
-    argument1 = array1.join("");               // tartiblangan har ikki arrayni stringga aylantiramiz
-    argument2 = array2.join("");
+//     argument1 = array1.join("");               // tartiblangan har ikki arrayni stringga aylantiramiz
+//     argument2 = array2.join("");
 
-    console.log(argument1, argument2);
+//     console.log(argument1, argument2);
 
-    return argument1 === argument2;            // string ko'rinishidagi ikki arrayni type bilan taqqoslaymiz 
-}
+//     return argument1 === argument2;            // string ko'rinishidagi ikki arrayni type bilan taqqoslaymiz 
+// }
 
-console.log(checkContent("mitgroup","gmtiprou"));
+// console.log(checkContent("mitgroup","gmtiprou"));
 
 
 
@@ -60,7 +79,6 @@ Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
 */
 // const moment = require('moment');
 // const time = moment().format("HH:mm");
-
 
 // class Shop {
 //     constructor(a, b, c) {
