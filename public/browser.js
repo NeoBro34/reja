@@ -53,8 +53,8 @@ document.addEventListener("click", function(e) {
       axios.post("/edit-item", {
         id: e.target.getAttribute("data-id"),
         new_input: userInput,})
-        .then((response) => {
-          console.log(response.data);
+        .then((respose) => {
+          console.log(respose.data);
         e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;})
         .catch((err) => {
           console.log("Qaytadan harakat qiling!");
